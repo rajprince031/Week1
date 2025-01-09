@@ -1,0 +1,5 @@
+// ignore all mac system file
+.DS_Store
+
+//ignore all .class file
+*.class

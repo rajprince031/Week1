@@ -9,7 +9,7 @@ public class LargestAndSecondLargestMaxDigit {
 
         // Define the number variable and take user input for the number
         System.out.print("Enter a number: ");
-        int number = input.nextInt();
+        long number = input.nextLong();
 
         // Initialize maxDigit variable to set the initial array size
         int maxDigit = 10;
@@ -34,7 +34,7 @@ public class LargestAndSecondLargestMaxDigit {
             }
 
             // Get the last digit of the number and add it to the array
-            digits[index] = number % 10;
+            digits[index] = (int)number % 10;
             number /= 10;  // Remove the last digit from the number
             index++;  // Increment the index
         }

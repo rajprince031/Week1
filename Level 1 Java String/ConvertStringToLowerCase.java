@@ -4,7 +4,7 @@ import java.util.Scanner;
 //Create ConvertStringToLowerCase to convert the string to lowercase
 public class ConvertStringToLowerCase{
     
-     //Create a method that using charAt() method to check the string are equal or not
+    //Create a method that using charAt() method to check the string are equal or not
     public boolean compareStringsUsingCharAt(String str1, String str2){
 
         //Check the length of string if different return false
@@ -21,19 +21,19 @@ public class ConvertStringToLowerCase{
         return true;//at the end return true
     }
 
-    //Create a method that use charAt method to convert the string to upperCase
+    //Create a method that use charAt method to convert the string to lowerCase
     public String convertLowerCase(String str){
 
         //Create a new Str variable and assign to "";
         String newStr = "";
     
-        //Take a loop that compare string using charAt method to convert string to uppercase
+        //Take a loop that compare string using charAt method to convert string to lowercase
         for(int i=0;i<str.length();i++){
 
             //Create a variable and store the ascii value of character
             int asciiValue = str.charAt(i);
 
-            //If the ascii is between the 97 and 122 then subtract 32 to convert into lowercase
+            //If the ascii is between the 97 and 122 then add 32 to convert into lowercase
             if(asciiValue >= 65 && asciiValue <= 90){
                 newStr = newStr + (char)(asciiValue + 32);
             }else{
@@ -57,10 +57,10 @@ public class ConvertStringToLowerCase{
         String str = input.nextLine();
 
 
-        //Create a variable str1 that store the string that return by toUpperCase inbuilt method
+        //Create a variable str1 that store the string that return by toLowerCase inbuilt method
         String str1 = str.toLowerCase();
 
-        //Create a variable str2 that store the result that return by convertUpperCase method
+        //Create a variable str2 that store the result that return by convertLowerCase method
         String str2 = ConvertStringToLowerCase.convertLowerCase(str);
 
         //Create a variable isEqual that store the result that return by compareStringsUsingCharAt method
